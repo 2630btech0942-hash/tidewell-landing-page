@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tidewell – The water bottle that tracks your day</title>
+<meta name="description" content="Tidewell is an insulated smart bottle that logs every sip and reminds you when to drink.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo">Tidewell</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">&#9776;</button>
+    <ul id="menu">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#faq">FAQ</a></li>
+      <li><a class="btn btn-primary" href="#signup">Join the waitlist</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Drink enough, without counting.</h1>
+        <p class="lead">Tidewell is an insulated steel bottle that logs every sip and nudges you when you fall behind. Cold for 24 hours, smart for 30 days per charge.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#pricing">Choose your Tidewell</a>
+          <a class="btn btn-ghost" href="#features">See how it works</a>
+        </div>
+      </div>
+      <div class="demo">
+        <svg class="bottle" viewBox="0 0 150 300" role="img" aria-label="Bottle showing how full your daily goal is">
+          <defs><clipPath id="clip"><rect x="30" y="50" width="90" height="235" rx="22"/></clipPath></defs>
+          <rect x="55" y="8" width="40" height="30" rx="8" fill="#10263a"/>
+          <rect x="30" y="50" width="90" height="235" rx="22" fill="#f4f8f8" stroke="#10263a" stroke-width="4"/>
+          <g clip-path="url(#clip)"><rect id="fill" x="30" y="285" width="90" height="0" fill="#1f7a8c"/></g>
+        </svg>
+        <h2><span id="ml">0</span> / 2,000 ml</h2>
+        <p id="status">Tap below to log your first sip.</p>
+        <button class="btn btn-primary" id="sipBtn" type="button">Log a sip (250 ml)</button>
+        <div class="swatches" role="group" aria-label="Bottle colour">
+          <button class="swatch" style="background:#1f7a8c" aria-label="Sea" aria-pressed="true" data-color="#1f7a8c"></button>
+          <button class="swatch" style="background:#e0634b" aria-label="Coral" aria-pressed="false" data-color="#e0634b"></button>
+          <button class="swatch" style="background:#6a8f3d" aria-label="Moss" aria-pressed="false" data-color="#6a8f3d"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="features">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Built for people who forget to drink</h2>
+        <p>Three things Tidewell does so you can stop thinking about water.</p>
+      </div>
+      <div class="features">
+        <div class="feature"><h3>Tracks every sip</h3><p>A sensor in the base measures what you drink and syncs to your phone over Bluetooth.</p></div>
+        <div class="feature"><h3>Reminds you gently</h3><p>The bottle glows softly when you are behind your goal. No phone alerts unless you want them.</p></div>
+        <div class="feature"><h3>Keeps drinks cold</h3><p>Double-wall vacuum steel holds ice for 24 hours and hot drinks for 12.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="Tidewell in numbers">
+    <div class="wrap">
+      <div class="stat"><strong>24 h</strong><span>Cold retention</span></div>
+      <div class="stat"><strong>30 days</strong><span>Battery life</span></div>
+      <div class="stat"><strong>94%</strong><span>of testers hit their goal more often</span></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Pick your size</h2>
+        <p>Free shipping and a 60-day return window on every order.</p>
+      </div>
+      <div class="pricing">
+        <div class="plan"><h3>Mini</h3><div class="price">$49</div>
+          <ul><li>500 ml steel bottle</li><li>Sip tracking</li><li>1 colour choice</li></ul>
+          <a class="btn btn-ghost" href="#signup">Get Mini</a></div>
+        <div class="plan featured"><h3>Classic</h3><div class="price">$69</div>
+          <ul><li>750 ml steel bottle</li><li>Sip tracking and glow reminders</li><li>3 colour choices</li></ul>
+          <a class="btn btn-primary" href="#signup">Get Classic</a></div>
+        <div class="plan"><h3>Pro</h3><div class="price">$89</div>
+          <ul><li>1 litre steel bottle</li><li>Everything in Classic</li><li>Wireless charging dock</li></ul>
+          <a class="btn btn-ghost" href="#signup">Get Pro</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="alt">
+    <div class="wrap">
+      <div class="section-head"><h2>What early users say</h2></div>
+      <div class="quotes">
+        <blockquote>I used to get headaches by 3 pm. Now the bottle glows and I just drink.<cite>Priya S., software engineer</cite></blockquote>
+        <blockquote>It survived a week in my gym bag and still tracks perfectly.<cite>Marcus T., personal trainer</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="wrap">
+      <div class="section-head"><h2>Questions, answered</h2></div>
+      <details><summary>Does it work with iPhone and Android?</summary><p>Yes. The free Tidewell app supports iOS 15+ and Android 10+.</p></details>
+      <details><summary>Is the bottle dishwasher safe?</summary><p>The steel body is top-rack safe. Remove the base sensor first, then rinse it by hand.</p></details>
+      <details><summary>How do I charge it?</summary><p>Use the included USB-C cable. A full charge lasts about 30 days.</p></details>
+      <details><summary>What if I don&rsquo;t like it?</summary><p>Return it within 60 days for a full refund.</p></details>
+    </div>
+  </section>
+
+  <section id="signup" class="alt">
+    <div class="wrap signup">
+      <h2>Be first to get one</h2>
+      <p class="signup-sub">Join the waitlist and get 15% off at launch.</p>
+      <form id="form" novalidate>
+        <input type="email" id="email" placeholder="you@example.com" aria-label="Email address" required>
+        <button class="btn btn-primary" type="submit">Join the waitlist</button>
+      </form>
+      <p class="msg" id="msg" role="status"></p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>&copy; 2026 Tidewell. A student project; the product is fictional.</span>
+    <span>Privacy &middot; Terms &middot; Contact</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
